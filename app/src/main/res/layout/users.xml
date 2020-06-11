@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_4">
+
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:translationY="50dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/images_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_6"/>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:translationX="20dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/u_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LvSeGongXiang"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationY="30dp"
+        style="@style/wrap_layout"
+        android:background="#00FFFFFF"
+        >
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout"
+            android:id="@+id/userfile"
+            android:background="#00FFFFFF">
+            <TextView
+                style="@style/usertext"
+                android:text="个人资料" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            style="@style/bg_line"
+            android:layout_height="2px"/>
+
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout"
+            android:id="@+id/messages"
+            android:background="#00FFFFFF">
+            <TextView
+                style="@style/usertext"
+                android:text="通知信息"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+
+        <!--分割线 -->
+        <View
+            style="@style/bg_line"
+            android:layout_height="2px"/>
+
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout"
+            android:id="@+id/question"
+            android:background="#00FFFFFF">
+            <TextView
+                style="@style/usertext"
+                android:text="问题反馈"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:translationY="100dp"
+        android:id="@+id/btn_quit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="退出登陆"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

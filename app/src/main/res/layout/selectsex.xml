@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/select_back"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="10dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="修改性别"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/single_layout"
+        android:id="@+id/man"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            style="@style/usertext"
+            android:text="男"
+            android:textSize="28dp"/>
+        <ImageView style="@style/img_arrow"/>
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        style="@style/bg_line"
+        android:layout_height="5px"/>
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/single_layout"
+        android:id="@+id/male"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="#00FFFFFF">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            style="@style/usertext"
+            android:text="女"
+            android:textSize="28dp"/>
+        <ImageView style="@style/img_arrow"/>
+    </LinearLayout>
+</LinearLayout>

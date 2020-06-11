@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_4">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:translationY="50dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image2"
+            android:translationX="0dp"
+            android:translationY="0dp"
+         />
+    </LinearLayout>
+    <!-- 分割线 -->
+    <View
+        android:translationY="60dp"
+        style="@style/bg_line"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="5px"/>
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:translationY="70dp">
+
+        <ImageButton
+            android:id="@+id/scanIB"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/scan"
+            android:translationX="60dp"
+            android:translationY="0dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键租借"
+            android:textSize="20sp"
+            android:translationX="-15dp"
+            android:translationY="80dp" />
+
+        <ImageButton
+            android:id="@+id/balanceIB"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/balance"
+            android:translationX="70dp"
+            android:translationY="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的余额"
+            android:textSize="20sp"
+            android:translationX="-5dp"
+            android:translationY="80dp" />
+
+
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:translationY="80dp"
+        style="@style/bg_line"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="5px"/>
+
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:translationY="110dp">
+
+        <ImageButton
+            android:id="@+id/sqIB"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/site_query"
+            android:translationX="20dp"
+            android:translationY="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="站点查询"
+            android:textSize="20sp"
+            android:translationX="-60dp"
+            android:translationY="90dp" />
+
+        <ImageButton
+            android:id="@+id/elIB"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/express_logistics"
+            android:translationX="-10dp"
+            android:translationY="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递物流"
+            android:textSize="20sp"
+            android:translationX="-80dp"
+            android:translationY="90dp" />
+
+        <ImageButton
+            android:id="@+id/online_service_IB"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/online_service"
+            android:translationX="-40dp"
+            android:translationY="10dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="28dp"
+            android:text="在线客服"
+            android:textSize="20sp"
+            android:translationX="-110dp"
+            android:translationY="90dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

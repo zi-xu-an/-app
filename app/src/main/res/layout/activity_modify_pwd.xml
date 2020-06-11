@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="10dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_modify_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="修改密码"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_modify_pwd"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="?attr/selectableItemBackground"
+                android:text="修改"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/view"
+        android:background="@drawable/image_4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="欢迎用户:"
+            android:textSize="24sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:id="@+id/tv_stu_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="24sp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="150dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="初始密码:"
+            android:textSize="24sp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/tv_stu_number"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp" />
+        <EditText
+            android:id="@+id/et_original_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp"
+            android:layout_marginStart="150dp"
+            android:layout_below="@+id/tv_stu_number"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorGreen"
+            android:layout_marginEnd="60dp"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="60dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="新密码:"
+            android:textSize="24sp"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/et_original_pwd"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="50dp" />
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp"
+            android:layout_marginStart="150dp"
+            android:layout_below="@+id/et_original_pwd"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorGreen"
+            android:layout_marginEnd="60dp"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="60dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="确认密码:"
+            android:textSize="24sp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/et_new_pwd"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp" />
+        <EditText
+            android:id="@+id/et_confirm_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="24sp"
+            android:layout_marginStart="150dp"
+            android:layout_below="@+id/et_new_pwd"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorGreen"
+            android:layout_marginEnd="60dp"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="60dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

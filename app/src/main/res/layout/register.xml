@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:translationY="100dp"
+        android:text="用户注册"
+        android:textColor="#070000"
+        android:textSize="48sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:translationY="100dp"
+        android:translationX="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:text="用户名："
+            android:textColor="#070000"/>
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="Phone/QQ/Wechat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:translationY="100dp"
+        android:translationX="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:text="密码  ："
+            android:textColor="#070000"/>
+
+        <EditText
+            android:id="@+id/registerpassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="Enter your password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="60dp"
+        android:translationY="100dp"
+        android:translationX="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:text=" 确认密码："
+            android:textColor="#070000"/>
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="Repeat your password" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:translationY="100dp"
+        android:translationX="80dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="验证码："
+            android:textColor="#070000"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/cachp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/cap" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/ivcode"
+        android:visibility="gone"
+        android:translationY="80dp"
+        android:translationX="250dp"/>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationY="125dp"
+        android:text="确认"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:translationY="130dp"/>
+
+</LinearLayout>
